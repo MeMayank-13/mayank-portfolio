@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: fadeUp 1.2s ease;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #4f46e5;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .links a {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .links a i {
+      margin-right: 10px;
+    }
+
+    .linkedin {
+      background: linear-gradient(135deg, #0a66c2, #004182);
+    }
+
+    .github {
+      background: linear-gradient(135deg, #24292e, #000000);
+    }
+
+    .links a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mayank Kaushik</h1>
+    <p>Student • Developer • Tech Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm a motivated learner who loves building things with code.
+      I enjoy exploring new technologies and improving my skills every day.
+      This portfolio highlights my professional and coding profiles.
+    </p>
+  </section>
+
+  <section>
+    <h2>Connect With Me</h2>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/mayank-kaushik-772719381/" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/MeMayank-13/Mayank-Kaushik.git" target="_blank" class="github">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Mayank Kaushik • Built with ❤️
+  </footer>
+
+</body>
+</html>
